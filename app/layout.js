@@ -1,5 +1,6 @@
 import './globals.css'
 import PasswordGate from './components/PasswordGate'
+import BarraPerfil from './components/BarraPerfil'
 
 export const metadata = {
   title: 'Jogo de Cartas Daga',
@@ -10,7 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body>
-        <PasswordGate>{children}</PasswordGate>
+        <PasswordGate>
+        <BarraPerfil />
+          {children}
+          </PasswordGate>
       </body>
     </html>
   )
